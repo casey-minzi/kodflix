@@ -12,12 +12,24 @@ function App() {
   return (
     <div className = 'App'>
       <div className = 'flex_container'>
-        <h1 className = 'movie_title'> A Lot Like Love</h1>
-        <h1 className = 'movie_title'> Pride and Prejudice</h1>
-        <h1 className = 'movie_title'> About Time</h1>
-        <h1 className = 'movie_title'> Whisper of The Heart</h1>
-        <h1 className = 'movie_title'> When Harry Met Sally</h1>
-        <h1 className = 'movie_title'> Parasite</h1>
+        <h1 className = 'movie_title'>
+          <img src = {aLotLikeLove} alt = 'A Lot Like Love'/>
+        </h1>
+        <h1 className = 'movie_title'>
+          <img src = {prideAndPrejudice} alt = 'Pride and Prejudice'/>
+        </h1>
+        <h1 className ='movie_title'>
+          <img src = {aboutTime} alt = 'About Time'/>
+        </h1>
+        <h1 className = 'movie_title'>
+          <img src = {whisperOfTheHeart} alt ='Whisper of the Heart'/>
+        </h1>
+        <h1 className = 'movie_title'>
+          <img src = {whenHarryMetSally} alt = 'When Harry Met Sally'/>
+        </h1>
+        <h1 className = 'movie_title'>
+          <img src = {parasite} alt ='Parasite'/>
+        </h1>
       </div>
     </div>
 
