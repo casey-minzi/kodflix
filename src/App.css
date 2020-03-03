@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie_title {
+  flex-basis: 33%;
+}
+
+
+
