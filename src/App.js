@@ -11,7 +11,7 @@ import parasite from './parasite_poster.jpg';
 function App() {
   return (
     <div className = 'App'>
-      <div className = 'flex_container'>
+      <div className = 'container'>
         <h1 className = 'movie_title'>
           <img src = {aLotLikeLove} alt = 'A Lot Like Love'/>
         </h1>
@@ -21,6 +21,8 @@ function App() {
         <h1 className ='movie_title'>
           <img src = {aboutTime} alt = 'About Time'/>
         </h1>
+      </div>
+      <div className ='container'>
         <h1 className = 'movie_title'>
           <img src = {whisperOfTheHeart} alt ='Whisper of the Heart'/>
         </h1>
