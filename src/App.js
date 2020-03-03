@@ -10,28 +10,46 @@ import parasite from './parasite_poster.jpg';
 
 function App() {
   return (
-    <div className = 'App'>
-      <div className = 'container'>
-        <h1 className = 'movie_title'>
-          <img src = {aLotLikeLove} alt = 'A Lot Like Love'/>
-        </h1>
-        <h1 className = 'movie_title'>
-          <img src = {prideAndPrejudice} alt = 'Pride and Prejudice'/>
-        </h1>
-        <h1 className ='movie_title'>
-          <img src = {aboutTime} alt = 'About Time'/>
-        </h1>
+    <div className='App'>
+      <div className='container'>
+        <div className='movie'>
+          <img src={aLotLikeLove} className='item' alt='A Lot Like Love' />
+          <div className='title'>
+            <h2>A Lot Like Love</h2>
+          </div>
+        </div>
+        <div className='movie'>
+          <img src={prideAndPrejudice} className='item' alt='Pride and Prejudice' />
+          <div className='title'>
+            <h2>Pride and Prejudice</h2>
+          </div>
+        </div>
+        <div className='movie'>
+          <img src={aboutTime} className='item' alt='About Time' />
+          <div className='title'>
+            <h2>About Time</h2>
+          </div>
+        </div>
       </div>
-      <div className ='container'>
-        <h1 className = 'movie_title'>
-          <img src = {whisperOfTheHeart} alt ='Whisper of the Heart'/>
-        </h1>
-        <h1 className = 'movie_title'>
-          <img src = {whenHarryMetSally} alt = 'When Harry Met Sally'/>
-        </h1>
-        <h1 className = 'movie_title'>
-          <img src = {parasite} alt ='Parasite'/>
-        </h1>
+      <div className='container'>
+        <div className='movie'>
+          <img src={whisperOfTheHeart} className='item' alt='Whisper of the Heart' />
+          <div className='title'>
+            <h2>Whisper of the Heart</h2>
+          </div>
+        </div>
+        <div className='movie'>
+          <img src={whenHarryMetSally} className='item' alt='When Harry Met Sally' />
+          <div className='title'>
+            <h2>When Harry Met Sally</h2>
+          </div>
+        </div>
+        <div className='movie'>
+          <img src={parasite} className='item' alt='Parasite' />
+          <div className='title'>
+            <h2>Parasite</h2>
+          </div>
+        </div>
       </div>
     </div>
 
