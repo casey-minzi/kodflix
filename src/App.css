@@ -4,27 +4,27 @@
 
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
-.movie {
-  margin: 30px;
-  flex: 1;
+.item {
   position: relative;
   overflow: hidden;
+  flex: 1;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 600px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
-.movie .item {
+
+.titleImg {
   width: 100%;
   height: 100%;
 }
 
-.movie .title_overlay {
+.item .titleOverlay {
   width: 100%;
   height: 20%;
   bottom: -100px;
@@ -36,13 +36,13 @@
   transition: bottom ease 1000ms;
 }
 
-.title_overlay h2 {
+.titleOverlay h2 {
   position: relative;
   color:white;
-  top: 20%;
+  top: 30%;
 }
 
-.movie:hover .title_overlay {
+.item:hover .titleOverlay {
   opacity: 1;
   bottom: 0;
 }
