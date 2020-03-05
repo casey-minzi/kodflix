@@ -1,29 +1,24 @@
-.App {
-  text-align: center;
-}
-/*
-.container {
+.container{
   display: flex;
   flex-direction: column;
 }
-
 .item {
   position: relative;
   overflow: hidden;
   flex: 1;
 }
-
+  
 @media (min-width: 600px) {
   .container {
     flex-direction: row;
   }
 }
-
+  
 .titleImg {
   width: 100%;
   height: 100%;
 }
-
+  
 .item .titleOverlay {
   width: 100%;
   height: 20%;
@@ -35,17 +30,14 @@
   background-color: rgba(0,0,0,.7);
   transition: bottom ease 1000ms;
 }
-
+  
 .titleOverlay h2 {
   position: relative;
   color:white;
   top: 30%;
 }
-
+  
 .item:hover .titleOverlay {
   opacity: 1;
   bottom: 0;
 }
-*/
-
-

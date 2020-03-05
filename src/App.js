@@ -1,4 +1,5 @@
 import React from 'react';
+import Movie from './Movie/Movie';
 import './App.css';
 import aLotLikeLove from './a_lot_like_love_poster.jpg';
 import prideAndPrejudice from './pride_and_prejudice_poster.jpg';
@@ -12,44 +13,32 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="item">
-            <img src={aLotLikeLove} className="titleImg" alt="A Lot Like Love" />
-          <div className="titleOverlay">
-            <h2>A Lot Like Love</h2>
-          </div>
-        </div>
-        <div className="item">
-            <img src={prideAndPrejudice} className="titleImg" alt="Pride and Prejudice" />
-          <div className="titleOverlay">
-            <h2>Pride and Prejudice</h2>
-          </div>
-        </div>
-        <div className="item">
-          <img src={aboutTime} className="titleImg" alt="About Time" />
-          <div className="titleOverlay">
-            <h2>About Time</h2>
-          </div>
-        </div>
+        <Movie
+          img ={aLotLikeLove}
+          title = "A Lot Like Love"
+          alternative = "A lot like love"/>
+          <Movie
+          img ={prideAndPrejudice}
+          title = "Price and Prejudice"
+          alternative = "Pride and Prejudice"/>
+          <Movie
+          img ={aboutTime}
+          title = "About Time"
+          alternative = "About Time"/>
       </div>
       <div className="container">
-        <div className="item">
-          <img src={whisperOfTheHeart} className="titleImg" alt="Whisper of the Heart" />
-          <div className="titleOverlay">
-            <h2>Whisper of the Heart</h2>
-          </div>
-        </div>
-        <div className="item">
-          <img src={whenHarryMetSally} className="titleImg" alt="When Harry Met Sally" />
-          <div className="titleOverlay">
-            <h2>When Harry Met Sally</h2>
-          </div>
-        </div>
-        <div className="item">
-          <img src={parasite} className="titleImg" alt="Parasite" />
-          <div className="titleOverlay">
-            <h2>Parasite</h2>
-          </div>
-        </div>
+        <Movie
+          img ={whisperOfTheHeart}
+          title = "Whisper of the Heart"
+          alternative = "Whisper of the Heart"/>
+          <Movie
+          img ={whenHarryMetSally}
+          title = "When Harry Met Sally"
+          alternative = "When Harry Met Sally"/>
+          <Movie
+          img ={parasite}
+          title = "Parasite"
+          alternative = "Parasite"/>
       </div>
     </div>
   );
