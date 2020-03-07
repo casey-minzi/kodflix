@@ -14,31 +14,31 @@ function App() {
     <div className="App">
       <div className="container">
         <Movie
-          img ={aLotLikeLove}
-          title = "A Lot Like Love"
-          alternative = "A lot like love"/>
-          <Movie
-          img ={prideAndPrejudice}
-          title = "Price and Prejudice"
-          alternative = "Pride and Prejudice"/>
-          <Movie
-          img ={aboutTime}
-          title = "About Time"
-          alternative = "About Time"/>
+          image={aLotLikeLove}
+          title="A Lot Like Love"
+        />
+        <Movie
+          image={prideAndPrejudice}
+          title="Pride and Prejudice"
+        />
+        <Movie
+          image={aboutTime}
+          title="About Time"
+        />
       </div>
       <div className="container">
         <Movie
-          img ={whisperOfTheHeart}
-          title = "Whisper of the Heart"
-          alternative = "Whisper of the Heart"/>
-          <Movie
-          img ={whenHarryMetSally}
-          title = "When Harry Met Sally"
-          alternative = "When Harry Met Sally"/>
-          <Movie
-          img ={parasite}
-          title = "Parasite"
-          alternative = "Parasite"/>
+          image={whisperOfTheHeart}
+          title="Whisper of the Heart"
+        />
+        <Movie
+          image={whenHarryMetSally}
+          title="When Harry Met Sally"
+        />
+        <Movie
+          image={parasite}
+          title="Parasite"
+        />
       </div>
     </div>
   );
