@@ -12,7 +12,7 @@ function App() {
 			</header>
 			<BrowserRouter>
 				<Route path='/' exact component={Gallery} />
-				<Route path='/details' exact component={Details} />
+				<Route path='/:showId' exact component={Details} />
 			</BrowserRouter>
 		</div>
 	);

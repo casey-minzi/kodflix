@@ -14,28 +14,34 @@ export default function Gallery() {
 				<Movie
 					image={aLotLikeLove}
 					title="A Lot Like Love"
+					id="a-lot-like-love"
 				/>
 				<Movie
 					image={prideAndPrejudice}
 					title="Pride and Prejudice"
+					id="pride-and-prejudice"
 				/>
 				<Movie
 					image={aboutTime}
 					title="About Time"
+					id="about-time"
 				/>
 			</div>
 			<div className="container">
 				<Movie
 					image={whisperOfTheHeart}
 					title="Whisper of the Heart"
+					id="whisper-of-the-heart"
 				/>
 				<Movie
 					image={whenHarryMetSally}
 					title="When Harry Met Sally"
+					id="when-harry-met-sally"
 				/>
 				<Movie
 					image={parasite}
 					title="Parasite"
+					id="parasite"
 				/>
 			</div>
 		</div>

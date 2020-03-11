@@ -3,11 +3,11 @@ import './Movie.css';
 import { Link } from 'react-router-dom';
 
 
-export default function Movie({ image, title }) {
+export default function Movie({ image, title, id }) {
   return (
     <div className="item">
-      <Link to='/details'>
-        <img src={image} className="titleImg" alt={title} />
+      <Link to={`/${id}`}>
+        <img src={image} className="titleImg" alt={title} id={id}/>
         <div className="titleOverlay">
           {title}
         </div>
