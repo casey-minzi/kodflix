@@ -11,37 +11,25 @@ export default function Gallery() {
 	return (
 		<div className="Movie">
 			<div className="container">
-				<Movie
-					image={aLotLikeLove}
-					title="A Lot Like Love"
-					id="a-lot-like-love"
-				/>
-				<Movie
-					image={prideAndPrejudice}
-					title="Pride and Prejudice"
-					id="pride-and-prejudice"
-				/>
-				<Movie
-					image={aboutTime}
-					title="About Time"
-					id="about-time"
-				/>
-				<Movie
-					image={whisperOfTheHeart}
-					title="Whisper of the Heart"
-					id="whisper-of-the-heart"
-				/>
-				<Movie
-					image={whenHarryMetSally}
-					title="When Harry Met Sally"
-					id="when-harry-met-sally"
-				/>
-				<Movie
-					image={parasite}
-					title="Parasite"
-					id="parasite"
-				/>
+				{Gallery_get().map(({title, image, id}) => (
+					<Movie
+						title={title}
+						image={image}
+						id={id}
+					/>
+				))
+				}
 			</div>
 		</div>
 	)
+	function Gallery_get() {
+		return [
+			{ image: aLotLikeLove, title: 'A Lot Like Love', id: 'a_lot_like_love' },
+			{ image: prideAndPrejudice, title: 'Pride and Prejudice', id: 'pride_and_prejudice' },
+			{ image: aboutTime, title: 'About Time', id: 'about_time' },
+			{ image: whisperOfTheHeart, title: 'Whisper of the Heart', id: 'whisper_of_the_heart' },
+			{ image: whenHarryMetSally, title: 'When Harry Met Sally', id: 'when_harry_met_sally' },
+			{ image: parasite, title: 'Parasite', id: 'parasite' },
+		];
+	}
 }
