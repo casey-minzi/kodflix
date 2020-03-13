@@ -7,7 +7,7 @@ export default function Movie({ image, title, id }) {
   return (
     <div className="item">
       <Link to={`/${id}`}>
-        <img src={image} className="titleImg" alt={title} id={id}/>
+        <img src={image} className="titleImg" alt={title} id={id} key={id}/>
         <div className="titleOverlay">
           <h2>{title}</h2>
         </div>
