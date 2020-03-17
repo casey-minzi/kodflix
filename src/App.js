@@ -1,8 +1,9 @@
 import React from 'react';
 import Gallery from './Gallery/Gallery';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Details from './Details/Details';
+import NotFound from './NotFound/NotFound';
 
 function App() {
 	return (
@@ -10,10 +11,13 @@ function App() {
 			<header>
 				<h1> This is Kodflix</h1>
 			</header>
-			<BrowserRouter>
-				<Route path='/' exact component={Gallery} />
-				<Route path='/:showId' exact component={Details} />
-			</BrowserRouter>
+			<Router>
+				<Switch>
+					<Route path='/' exact component={Gallery} />
+					<Route path='/not-found' exact component={NotFound} />
+					<Route path='/:showId' exact component={Details} />
+				</Switch>
+			</Router>
 		</div>
 	);
 }
