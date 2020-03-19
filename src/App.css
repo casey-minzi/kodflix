@@ -1,51 +1,8 @@
 .App {
   text-align: center;
 }
-/* Comment to test movie.css
-.container {
-  display: flex;
-  flex-direction: column;
+
+body {
+  background-color: rgba(0, 0, 0, .8);
+  color: rgba(255, 255, 255, 1);
 }
-
-.item {
-  position: relative;
-  overflow: hidden;
-  flex: 1;
-}
-
-@media (min-width: 600px) {
-  .container {
-    flex-direction: row;
-  }
-}
-
-.titleImg {
-  width: 100%;
-  height: 100%;
-}
-
-.item .titleOverlay {
-  width: 100%;
-  height: 20%;
-  bottom: -100px;
-  left: 0;
-  text-align: center;
-  position: absolute;
-  opacity: 0;
-  background-color: rgba(0,0,0,.7);
-  transition: bottom ease 1000ms;
-}
-
-.titleOverlay h2 {
-  position: relative;
-  color:white;
-  top: 30%;
-}
-
-.item:hover .titleOverlay {
-  opacity: 1;
-  bottom: 0;
-}
-*/
-
-

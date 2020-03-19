@@ -1,0 +1,35 @@
+.Details .container {
+  /* border: 4px solid red; */
+  display: block;
+}
+
+.Details .item {
+  /* border: 2px solid blue; */
+  padding: 20px;
+}
+.Details .synopsis {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.Details .imageBox {
+  /* border: 2px solid orange; */
+  margin: 0 auto;
+  max-width: 380px
+}
+
+.Details .imageBox img{
+  width: 100%;
+}
+
+@media ( min-width:600px ){
+  .Details .container {
+    /* border: 4px solid green; */
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .Details .item {
+    margin: 0 20px;
+    flex: 1;
+  }
+}
