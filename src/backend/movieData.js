@@ -51,4 +51,4 @@ function movieData() {
   Kim clan.` },]
 }
 
-module.exports.movieData = movieData
+module.exports.movieData = movieData;
