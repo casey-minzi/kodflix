@@ -16,7 +16,6 @@ export default class Gallery extends Component {
 			.then(movie => {
 				this.setState({movieList: movie})
 			})
-			.then(() => {console.log(this.state.movieList)})
 	}
 
 	render() {
