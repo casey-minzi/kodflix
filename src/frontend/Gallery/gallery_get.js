@@ -1,9 +1,9 @@
-import aLotLikeLove from './Images/a_lot_like_love_poster.jpg';
-import prideAndPrejudice from './Images/pride_and_prejudice_poster.jpg';
-import aboutTime from './Images/about_time_poster.jpg';
-import whisperOfTheHeart from './Images/whisper_of_the_heart_poster.jpg';
-import whenHarryMetSally from './Images/when_harry_met_sally_poster.jpg';
-import parasite from './Images/parasite_poster.jpg';
+import aLotLikeLove from './Images/a_lot_like_love.jpg';
+import prideAndPrejudice from './Images/pride_and_prejudice.jpg';
+import aboutTime from './Images/about_time.jpg';
+import whisperOfTheHeart from './Images/whisper_of_the_heart.jpg';
+import whenHarryMetSally from './Images/when_harry_met_sally.jpg';
+import parasite from './Images/parasite.jpg';
 
 export default function gallery_get() {
   return [

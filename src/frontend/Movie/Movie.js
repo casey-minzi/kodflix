@@ -8,7 +8,7 @@ export default function Movie({ image, title, id }) {
     <div className="item">
       <Link to={`/${id}`}>
         <div className="imageContainer">
-          <img src={image} className="titleImg" alt={title} id={id} key={id}/>
+          <img src={require(`../Gallery/images/${id}.jpg`)} className="titleImg" alt={title} id={id} key={id}/>
         </div>
         <div className="titleOverlay">
           <h2>{title}</h2>
