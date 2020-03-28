@@ -13,8 +13,8 @@ export default class Gallery extends Component {
 	componentDidMount() {
 		fetch('/rest/shows')
 			.then(response => response.json())
-			.then(movie => {
-				this.setState({movieList: movie})
+			.then(movies => {
+				this.setState({ movieList: movies })
 			})
 
 	}
@@ -23,11 +23,10 @@ export default class Gallery extends Component {
 		return (
 			<div className="Movie">
 				<div className="container">
-					{this.state.movieList.map(({ title, image, id }) => (
+					{this.state.movieList.map(({ title, id }) => (
 						<Movie
 							key={id}
 							title={title}
-							image={image}
 							id={id}
 						/>
 					))
