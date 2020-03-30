@@ -12,8 +12,6 @@ export default function Movie({ title, id }) {
             src={require(`../common/images/${id}.jpg`)}
             className="titleImg"
             alt={title}
-            id={id}
-            key={id}
           />
         </div>
         <div className="titleOverlay">

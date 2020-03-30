@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function DetailsContent({movie}) {
-	console.log(movie.id)
   return (
     <div className="Details">
 				<div className="container">
