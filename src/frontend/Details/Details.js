@@ -13,10 +13,16 @@ export default class Details extends Component {
 	}
 	componentDidMount() {
 		let showId = this.props.match.params.showId;
-		let movie = gallery_get().find((movie) => movie.id === showId);
-		this.setState({
-			movie
-		})
+		let movieList = [];
+		let movie;
+		// let movie = gallery_get().find((movie) => movie.id === showId);
+		// 	this.setState({ movie })
+		fetch('/rest/shows')
+			.then(response => response.json())
+			.then(movies => movieList.push(movies))
+			.then(() => movie = movieList.find(movie => movie.id === showId ))
+			.then(() => this.setState({ movie }))
+
 	}
 	render() {
 		if (this.state.movie === undefined) {
