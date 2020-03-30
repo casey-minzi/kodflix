@@ -13,10 +13,10 @@ export default function DetailsContent({movie}) {
 					</div>
 					<div className="item">
 						<div className="imageBox">
-							{movie.id && <img 
-								src={require(`../Gallery/Images/${movie.id}.jpg`)}
+							<img 
+								src={require(`../common/images/${movie.id}.jpg`)}
 								alt={movie.title}
-							/>}
+							/>
 						</div>
 					</div>
 				</div>

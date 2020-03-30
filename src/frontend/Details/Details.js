@@ -25,11 +25,12 @@ export default class Details extends Component {
 
 	render() {
 		let { movie } = this.state;
-		// if (movie.movie.id === undefined) {
-		// 	return <Redirect to="/not-found" />;
-		// } else {
-			return (
-				movie && <DetailsContent movie={movie} />
-		)}
-	// }
+		if (movie) {
+			return movie.id ?
+				<DetailsContent movie={movie} /> :
+				<div />
+		} else {
+			return <Redirect to="/not-found" />;
+		}
+	}
 }
