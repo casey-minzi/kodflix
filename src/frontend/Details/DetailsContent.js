@@ -1,0 +1,25 @@
+import React from 'react'
+
+export default function DetailsContent({movie}) {
+	console.log(movie.id)
+  return (
+    <div className="Details">
+				<div className="container">
+					<div className="item">
+						<h2 className="movieTitle">
+							{movie.title}
+						</h2>
+						<div className="synopsis">{movie.synopsis}</div>
+					</div>
+					<div className="item">
+						<div className="imageBox">
+							{movie.id && <img 
+								src={require(`../Gallery/Images/${movie.id}.jpg`)}
+								alt={movie.title}
+							/>}
+						</div>
+					</div>
+				</div>
+			</div>
+  )
+}

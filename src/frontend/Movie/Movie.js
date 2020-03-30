@@ -9,7 +9,7 @@ export default function Movie({ title, id }) {
       <Link to={`/${id}`}>
         <div className="imageContainer">
           <img 
-            src={require(`../Gallery/images/${id}.jpg`)}
+            src={require(`../Gallery/Images/${id}.jpg`)}
             className="titleImg"
             alt={title}
             id={id}

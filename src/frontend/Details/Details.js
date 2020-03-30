@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import gallery_get from '../Gallery/gallery_get';
 import { Redirect } from 'react-router-dom';
 import './Details.css';
+import DetailsContent from './DetailsContent';
 
 
 export default class Details extends Component {
@@ -24,28 +24,12 @@ export default class Details extends Component {
 	}
 
 	render() {
-		if (this.state.movie === undefined) {
-			return <Redirect to="/not-found" />;
-		} else {
+		let { movie } = this.state;
+		// if (movie.movie.id === undefined) {
+		// 	return <Redirect to="/not-found" />;
+		// } else {
 			return (
-			<div className="Details">
-				<div className="container">
-					<div className="item">
-						<h2 className="movieTitle">
-							{this.state.movie.title}
-						</h2>
-						<div className="synopsis">{this.state.movie.synopsis}</div>
-					</div>
-					<div className="item">
-						<div className="imageBox">
-							<img 
-								src={require(`../Gallery/images/${id}.jpg`)}
-								alt={this.state.movie.title}
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
+				movie && <DetailsContent movie={movie} />
 		)}
-	}
+	// }
 }
