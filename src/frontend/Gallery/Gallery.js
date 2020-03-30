@@ -14,7 +14,7 @@ export default class Gallery extends Component {
 		fetch('/rest/shows')
 			.then(response => response.json())
 			.then(movies => {
-				this.setState({ movieList: movies })
+				this.setState({ movieList: movies });
 			})
 
 	}
