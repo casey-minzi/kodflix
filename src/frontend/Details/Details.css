@@ -1,29 +1,27 @@
-.Details .container {
-  /* border: 4px solid red; */
-  display: block;
+.Details {
+  text-align: center;
 }
-
 .Details .item {
-  /* border: 2px solid blue; */
-  padding: 20px;
+  padding: 40px 0;
+  display: grid;
+  place-content: center;
 }
 .Details .synopsis {
   max-width: 500px;
-  margin: 0 auto;
 }
 .Details .imageBox {
   border: 2px solid rgba(250, 250, 250, 1);
   margin: 0 auto;
-  max-width: 380px
+  max-width: 400px
 }
 
 .Details .imageBox img{
   width: 100%;
+  height: 550px;
 }
 
 @media ( min-width:600px ){
   .Details .container {
-    /* border: 4px solid green; */
     display: flex;
     justify-content: space-around;
   }

@@ -1,20 +1,20 @@
 import React from 'react'
 
-export default function DetailsContent({movie}) {
+export default function DetailsContent({title, synopsis, id}) {
   return (
     <div className="Details">
 				<div className="container">
 					<div className="item">
 						<h2 className="movieTitle">
-							{movie.title}
+							{title}
 						</h2>
-						<div className="synopsis">{movie.synopsis}</div>
+						<div className="synopsis">{synopsis}</div>
 					</div>
 					<div className="item">
 						<div className="imageBox">
 							<img 
-								src={require(`../common/images/${movie.id}.jpg`)}
-								alt={movie.title}
+								src={require(`../common/images/${id}.jpg`)}
+								alt={title}
 							/>
 						</div>
 					</div>

@@ -27,7 +27,7 @@ export default class Details extends Component {
 		let { movie } = this.state;
 		if (movie) {
 			return movie.id ?
-				<DetailsContent movie={movie} /> :
+				<DetailsContent {...movie} /> :
 				<div />
 		} else {
 			return <Redirect to="/not-found" />;

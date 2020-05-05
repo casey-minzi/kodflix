@@ -1,0 +1,8 @@
+header {
+    display: grid;
+    place-content: center;
+}
+
+.KodflixLogo {
+    width: 250px;
+}
