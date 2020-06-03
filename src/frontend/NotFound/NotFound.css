@@ -1,0 +1,14 @@
+.NotFound {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (min-width: 600px) {
+    .NotFound {
+        font-size: inherit;
+    }
+}
