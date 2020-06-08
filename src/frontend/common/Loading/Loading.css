@@ -6,12 +6,12 @@
 }
 
 .Loading_loader {
-    border: 24px solid #f3f3f3;
-    border-top: 24px solid #E50914;
+    border: 14px solid #f3f3f3;
+    border-top: 14px solid #E50914;
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    animation: spin 2s linear infinite;
+    animation: spin 3s linear infinite;
   }
   
   @keyframes spin {
